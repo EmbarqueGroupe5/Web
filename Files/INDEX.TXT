@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Robot Arduino</title>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+	<link rel='stylesheet' type='text/css' href='http://192.168.169.1/media/Storage/Arduino/bootstrap.css' />
+	<link rel="stylesheet" href="http://192.168.169.1/media/Storage/Arduino/font-awesome-4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://192.168.169.1/media/Storage/Arduino/jquery.js"></script>
+	<script type="text/javascript" src="http://192.168.169.1/media/Storage/Arduino/script.js"></script>
+</head>
+<body>
+	<h1>Robot Arduino</h1>
+	<hr />
+	<br />
+	<h2>Arduino</h2>
+	<br />
+	<a class="url" href="?Backward"><i class="fa fa-arrow-circle-down"></i></a>
+	<br />
+	<a class="url" href="?Forward"><i class="fa fa-arrow-circle-up"></i></a>
+	<br />
+	<br />
+	<a class="url" href="?Left"><i class="fa fa-arrow-circle-left"></i></a>
+	<br />
+	<a class="url" href="?Right"><i class="fa fa-arrow-circle-right"></i></a>
+	<br />
+<!-- 	<button style="font-size:24px"><i class="fa fa-arrow-circle-up"></i>
+	<br />
+	<button style="font-size:24px"><i class="fa fa-arrow-circle-down"></i>
+	<br />
+	<button style="font-size:24px"><i class="fa fa-arrow-circle-left"></i>
+	<br />
+	<button style="font-size:24px"><i class="fa fa-arrow-circle-right"></i> -->
+	<br />
+
+</body>
+</html>
