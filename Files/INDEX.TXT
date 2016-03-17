@@ -4,7 +4,7 @@
 	<meta name='apple-mobile-web-app-capable' content='yes' />
 	<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
 	<link rel='stylesheet' type='text/css' href='http://192.168.169.1/media/Storage/Arduino/bootstrap.css' />
-	<link rel="stylesheet" href="http://192.168.169.1/media/Storage/Arduino/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="http://192.168.169.1/media/Storage/Arduino/jquery.js"></script>
 	<script type="text/javascript" src="http://192.168.169.1/media/Storage/Arduino/script.js"></script>
 </head>
