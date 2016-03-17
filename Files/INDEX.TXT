@@ -9,28 +9,35 @@
 	<script type="text/javascript" src="http://192.168.169.1/media/Storage/Arduino/script.js"></script>
 </head>
 <body>
-	<h1>Robot Arduino</h1>
-	<hr />
-	<br />
-	<h2>Arduino</h2>
-	<br />
-	<a class="url" href="?Backward"><i class="fa fa-arrow-circle-down"></i></a>
-	<br />
-	<a class="url" href="?Forward"><i class="fa fa-arrow-circle-up"></i></a>
-	<br />
-	<br />
-	<a class="url" href="?Left"><i class="fa fa-arrow-circle-left"></i></a>
-	<br />
-	<a class="url" href="?Right"><i class="fa fa-arrow-circle-right"></i></a>
-	<br />
-<!-- 	<button style="font-size:24px"><i class="fa fa-arrow-circle-up"></i>
-	<br />
-	<button style="font-size:24px"><i class="fa fa-arrow-circle-down"></i>
-	<br />
-	<button style="font-size:24px"><i class="fa fa-arrow-circle-left"></i>
-	<br />
-	<button style="font-size:24px"><i class="fa fa-arrow-circle-right"></i> -->
-	<br />
-
+	<div class="container">
+		<div class="header col-md-12 text-center">
+			<h1>Robot Arduino</h1>
+		</div>
+		<div class="content">
+			<div class="controls col-md-4 col-md-offset-4">
+				<div class="col-md-12">
+					<div class="col-md-4 col-md-offset-4">
+						<a class="url" href="?Forward"><i class="fa fa-5x fa-arrow-circle-up"></i></a>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-4">
+						<a class="url" href="?Left"><i class="fa fa-5x fa-arrow-circle-left"></i></a>
+					</div>
+					<div class="col-md-4">
+						<a class="url" href="?Stop"><i class="fa fa-5x fa-times"></i></a>
+					</div>
+					<div class="col-md-4">
+						<a class="url" href="?Right"><i class="fa fa-5x fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-4 col-md-offset-4">
+						<a class="url" href="?Backward"><i class="fa fa-5x fa-arrow-circle-down"></i></a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
