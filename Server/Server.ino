@@ -167,8 +167,8 @@ void loop() {
             }
           }
           else if (readString.indexOf("?Stop") > 0) {
-            left.write(90);
-            right.write(90);
+            left.writeMicroseconds(1500);
+            right.writeMicroseconds(1500);
           }
           else if (readString.indexOf("?Left") > 0) {
             left.write(180); //Backward
@@ -185,6 +185,22 @@ void loop() {
           else if (readString.indexOf("?Backward") > 0) {
             left.write(180); //Backward
             right.write(0); //Backward
+          }
+          else if (readString.indexOf("?ForwardLeft") > 0) {
+            left.write(60); //Forward
+            right.write(180); //Forward
+          }
+          else if (readString.indexOf("?ForwardRight") > 0) {
+            left.write(0); //Forward
+            right.write(120); //Forward
+          }
+          else if (readString.indexOf("?BackwardLeft") > 0) {
+            left.write(120); //Backward
+            right.write(0); //Backward
+          }
+          else if (readString.indexOf("?BackwardRight") > 0) {
+            left.write(180); //Backward
+            right.write(60); //Backward
           }
           else if (readString.indexOf("$") > 0) {
             String command = parseQuery(readString);
