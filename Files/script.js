@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	var url = "http://192.168.169.1/media/Storage/Arduino/";
-	
+	var url = "http://192.168.169.1/media/Storage/Arduino/"; //URL Des fichiers JS (routeur)
 	
 	var forward = 38;
 	var backward = 40;
@@ -52,26 +51,27 @@ $(document).ready(function(){
 	  }
 	});
 
-	
+	last = "";
 	function run(direction) {
-		console.log("Running to " + direction);
-		direction = "?" + direction
-		$.ajax({
-			url: direction,
-			method: "GET",
-			success: function(data){
-				$(".return").html(data);
-			}
-		});
+		if (typeof last != "undefined" && last != direction) {
+			console.log("Running to " + direction);
+			last = direction;
+			direction = "?" + direction;
+			$.ajax({
+				url: direction,
+				method: "GET",
+				success: function(data){
+					$(".return").html(data);
+				}
+			});	
+		}
 	}
 
 	
 	$('.url').click(function(){
 		var url = this.href;
 		url.replace("?", "");
-		
-		console.log(url);
-		
+				
 		run(url);
 		return false;
 	});
