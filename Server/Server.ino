@@ -202,30 +202,7 @@ void loop() {
             left.write(180); //Backward
             right.write(60); //Backward
           }
-          else if (readString.indexOf("$") > 0) {
-            String command = parseQuery(readString);
-
-            //Remove the "$"
-            command.replace("$", "");
-
-            Serial.print("Command: ");
-            Serial.println(command);
-
-            // Servos:
-            char s1[4] = {command[4], command[5], command[6], '\0'};
-            //char s2[4] = {command[7], command[8], command[9], '\0'};
-
-            // Convert char to int:
-            int s1i = atol (s1);
-            //int s2i = atol (s2);
-
-            // Set servo position:
-            left.write (s1i);
-            //servo2.write (s2i);
-
-
-          }
-
+          
           delay(1);
           //stopping client
           client.stop();
